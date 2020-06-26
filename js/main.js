@@ -1,5 +1,7 @@
 'use strict';
 
+// Menu hamburger
+
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 
@@ -9,4 +11,6 @@ hamburger.addEventListener('click', () => {
 
 window.addEventListener('click', ev => {
   (menu.classList.contains('spread')) && (ev.target !== menu) && (ev.target !== hamburger) ? menu.classList.toggle('spread') : "";
-})
+});
+
+// Lightbox
