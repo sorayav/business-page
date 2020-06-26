@@ -293,7 +293,7 @@ footer {
   max-width: 1200px;
   height: 2px;
   margin: 0 auto;
-  background: black;
+  background: rgba(221, 224, 49, 0.89);
   margin-bottom: 60px;
 }
 
@@ -304,7 +304,7 @@ footer {
 
   .title {
     width: 80%;
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .copy {
@@ -355,5 +355,24 @@ footer {
 
   .social-media-icon {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    width: 65vw;
+  }
+
+  .hamburger {
+    top: 10px;
+    right: 10px;
+  }
+
+  .add-image {
+    width: 95%;
+  }
+
+  .work-img {
+    width: 90%;
   }
 }
