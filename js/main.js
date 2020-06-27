@@ -25,13 +25,13 @@ images.forEach(image => {
   })
 })
 
-containerLight.addEventListener('click', (ev) => {
-  (ev.target !== imagesLight) ? (hamburger.style.opacity = '1', containerLight.classList.toggle('show'), imagesLight.classList.toggle('show-image')) : '';
-})
-
 const showImage = (image) => {
   imagesLight.src = image;
   containerLight.classList.toggle('show');
   imagesLight.classList.toggle('show-image');
   hamburger.style.opacity = '0';
 }
+
+containerLight.addEventListener('click', (ev) => {
+  (ev.target !== imagesLight) ? (hamburger.style.opacity = '1', containerLight.classList.toggle('show'), imagesLight.classList.toggle('show-image')) : '';
+})

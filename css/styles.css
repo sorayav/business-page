@@ -46,7 +46,7 @@ header {
   position: fixed;
   top: 30px;
   right: 30px;
-  background: rgb(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -133,6 +133,10 @@ header {
 .n-service {
   margin-bottom: 7px;
   color: var(--secondColor);
+}
+
+.service p {
+  line-height: 1.5;
 }
 
 .number {
