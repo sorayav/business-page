@@ -9,7 +9,7 @@ hamburger.addEventListener('click', () => {
   menu.classList.toggle('spread');
 });
 
-window.addEventListener('click', ev => {
+window.addEventListener('click', (ev) => {
   (menu.classList.contains('spread')) && (ev.target !== menu) && (ev.target !== hamburger) ? menu.classList.toggle('spread') : "";
 });
 
@@ -25,8 +25,13 @@ images.forEach(image => {
   })
 })
 
+containerLight.addEventListener('click', (ev) => {
+  (ev.target !== imagesLight) ? (hamburger.style.opacity = '1', containerLight.classList.toggle('show'), imagesLight.classList.toggle('show-image')) : '';
+})
+
 const showImage = (image) => {
   imagesLight.src = image;
   containerLight.classList.toggle('show');
   imagesLight.classList.toggle('show-image');
+  hamburger.style.opacity = '0';
 }
