@@ -14,3 +14,19 @@ window.addEventListener('click', ev => {
 });
 
 // Lightbox
+
+const images = document.querySelectorAll('.work-img');
+const imagesLight = document.querySelector('.add-image');
+const containerLight = document.querySelector('.image-light');
+
+images.forEach(image => {
+  image.addEventListener('click', () => { 
+    showImage(image.getAttribute('src'))
+  })
+})
+
+const showImage = (image) => {
+  imagesLight.src = image;
+  containerLight.classList.toggle('show');
+  imagesLight.classList.toggle('show-image');
+}
